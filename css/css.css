@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-bottom: 1px solid pink;
+    font-size: 18px;
+}
+
+.container {
+    padding: 25px 15px 10px;
+}
+
+.content {
+    border: 2px solid pink;
+    width: 300px;
+    height: 450px;
+    margin: 15px auto;
+}
+
+.content ul .click {
+    /* 设置选中的歌曲样式 */
+    background-color: pink;
+    color: #fff;
+}
+
+.sing-words {
+    text-align: center;
+}
+
+.controls {
+    margin: 25px 0;
+    position: relative;
+}
+
+.controls .progress {
+    margin: 0 auto;
+    width: 70%;
+    height: 8px;
+    background-color: #eee;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.controls .progress p {
+    width: 0;
+    height: 8px;
+    background-color: pink;
+    border-radius: 25px;
+}
+
+.controls .curtime {
+    position: absolute;
+    top: -8px;
+}
+
+.controls .alltime {
+    position: absolute;
+    top: -8px;
+    right: 0;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn .prev,.next {
+    margin: 0 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+    background-size: 40px 40px;
+    border-radius: 50%;
+    border: none;
+}
+
+.btn .pp {
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    background-size: 40px 40px;
+    border-radius: 50%;
+    border: none;
+}
+
+.btn .pause {
+    background-image: url(/img/play.png);
+}
+
+.btn .play {
+    background-image: url(/img/plause.png);
+}
+
+.btn .prev {
+    background-image: url(/img/prev.png);
+}
+
+.btn .next {
+    background-image: url(/img/next.png);
+}
+
+.cando{
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.cando .vol {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cando .vol em {
+    display: inline-block;
+    background-image: url(/img/vol.png);
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.cando .vol .mute {
+    background-image: url(/img/vol_on.png);
+}
+
+.cando .vol a {
+    display: none;
+    position: absolute;
+    left: 0;
+    top:-100px;
+    width: 30px;
+    height: 100px;
+    background-color: #eee;
+}
+
+.cando .vol a span {
+    display: block;
+    width: 10px;
+    height: 90px;
+    margin:5px auto;
+    border-radius:5px;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.cando .vol a span i {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 10px;
+    height: 10%;
+    background-color: pink;
+    border-radius: 4px;
+}
+
+.cando .s-loop,.a-loop {
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 95px;
+    background-position: left;
+    text-align: right;
+    padding-top: 5px;
+}
+
+.cando .a-loop {
+    background-image: url(/img/all.png);
+    background-size: 30px 20px;
+}
+
+.cando .s-loop {
+    background-image: url(/img/single.png);
+    
+}
+
+.cando .son {
+    background-image: url(/img/single_on.png);
+}
+
+.cando .aon {
+    background-image: url(/img/all_on.png);
+}

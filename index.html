@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐播放器</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <div class="container">
+        <h2>音乐播放器-小河今学</h1>
+        <div class="content">
+            <ul>
+            </ul>
+        </div>
+        <div class="sing-words">热爱歌词，热爱音乐</div>
+        <div class="audio">
+            <div class="controls">
+                <div class="progress">
+                    <p></p>
+                </div>
+                <span class="curtime">00:00</span>
+                <span class="alltime">00:01</span>
+            </div>
+            <audio src="none" id="player"></audio>
+            <div class="btn">
+                <button class="prev"></button>
+                <button class="pp play"></button>
+                <button class="next"></button>
+            </div>
+            <div class="cando">
+                <div class="vol">
+                    <em></em>
+                    <a>
+                        <span>
+                            <i></i>
+                        </span>
+                    </a>
+                    <b>10%</b>
+                </div>
+                <div class="s-loop">
+                    单曲循环
+                </div>
+                <div class="a-loop">
+                    全部循环
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/jquery.js"></script>
+<script src="/js/play.js"></script>
+</html>
